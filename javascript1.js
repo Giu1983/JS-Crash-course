@@ -13,18 +13,18 @@ javascript.js
 
 // For now, the following interactions are:
 
-/ For now, the following interactions are:
+//For now, the following interactions are:
 
   //Hairstylist – Beautyshop (with name, guests, city, comments)
                    //Weekly or montly service – offer (date, number, price)
                   //Customer (name & comments). 
 
-             Var Hairstylist = class {
-                 const (name, guest, city, comments) {
+             var hairStylist = class {
+                 constructor (name, guest, city, comments) {
                      this.name = name
                      this.guest = guest
                      this.city = city
-                     this. Comments = []
+                     this. comments = []
                        }
 
                  addComment() {
@@ -47,7 +47,7 @@ javascript.js
 
 var Offer = class {
 
-  const(date, number, price) {
+  constructor(date, number, price) {
 
     this.date = date
 
@@ -78,7 +78,7 @@ var Offer = class {
 
 
 
-  Set Price (offer) {
+  setPrice (offer) {
 
     console.log('It cost EUR', this.price)
 
@@ -90,43 +90,56 @@ var Offer = class {
 
 }
 
+//Create a Seller class
 
 
+var Seller = class {
 
-Var haistylist1 = new Seller('hairstylist1', 'Berlin')
-
-var hairstylist2 = new Seller('haistylist2', 'Leipzig')
-
-var haistylist3 = new Seller('haistylist3', 'Dusserldorf')
-
-
-Var beautyshop1 = new Seller('beautyshop1', 'Berlin')
-
-var beautyshop2 = new Seller('beautyshop2', 'Leipzig')
-
-var beautyshop3 = new Seller('beautyshop3', 'Dusserldorf')
+    constructor(category, name, city) {
+  
+      this.category = category
+  
+      this.name = name
+  
+      this.city = city
+  
+    }
 
 
-Hairstylist1.sayPlace()
+var hairStylist1 = new Seller('hairstylist1', 'name','Berlin')
 
- Hairstylist1.set_offer-service(x)
+var hairstylist2 = new Seller('haistylist2', 'name','Leipzig')
 
- Beautyshop1.sayName()
+var haistylist3 = new Seller('haistylist3', 'name', 'Dusserldorf')
 
- Beautyshop1.sayPlace()
 
- Beautyshop1.set_offer_service(y)
+var beautyShop1 = new Seller('beautyshop1', 'name','Berlin')
+
+var beautyShop2 = new Seller('beautyshop2','name', 'Leipzig')
+
+var beautyShop3 = new Seller('beautyshop3', 'name','Dusserldorf')
+
+
+hairStylist1.sayPlace()
+
+ hairStylist1.set_offer-service(x)
+
+ beautyShop1.sayName()
+
+ beautyShop1.sayPlace()
+
+ beautyShop1.set_offer_service(y)
 
 
 
 // check that everything got recorded correctly
                              //Shop
- Console.log(hairstylist1)
-   console.log(hairstylist2)
-   console.log(hairstylist3)
-   console.log(beautyshop1)
-   console.log(beautyshop2)
-   console.log(beautyshop3)
+ console.log(hairStylist1)
+   console.log(hairStylist2)
+   console.log(hairStylist3)
+   console.log(beautyShop1)
+   console.log(beautyShop2)
+   console.log(beautyShop3)
 
 
 //Offer-service
