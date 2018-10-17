@@ -20,11 +20,11 @@ javascript.js
                   //Customer (name & comments). 
 
              Var Hairstylist = class {
-                 Const (name, guest, city, comments) {
-                     This.name = name
-                     This.guest = guest
-                     This.city = city
-                     This. Comments = []
+                 const (name, guest, city, comments) {
+                     this.name = name
+                     this.guest = guest
+                     this.city = city
+                     this. Comments = []
                        }
 
                  addComment() {
@@ -122,23 +122,23 @@ Hairstylist1.sayPlace()
 // check that everything got recorded correctly
                              //Shop
  Console.log(hairstylist1)
-   Console.log(hairstylist2)
-   Console.log(hairstylist3)
-   Console.log(beautyshop1)
-   Console.log(beautyshop2)
-   Console.log(beautyshop3)
+   console.log(hairstylist2)
+   console.log(hairstylist3)
+   console.log(beautyshop1)
+   console.log(beautyshop2)
+   console.log(beautyshop3)
 
 
 //Offer-service
 
-Console.log(x)
-Console.log(y)
+console.log(x)
+console.log(y)
 
 
 //User
-Console.log(A)
-Console.log(B)
-Console.log(C)
+console.log(A)
+console.log(B)
+console.log(C)
             
 
 
