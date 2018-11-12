@@ -1,15 +1,15 @@
-// Create a "close" button and append it to each list item
-var myNovemberlist = document.getElementsByTagName("LI");
+// Create a "Close Button"
+var myNovemberlist = document.getElementsByTagName("Li");
 var i;
 for (i = 0; i < myNovemberlist.length; i++) {
   var span = document.createElement("SPAN");
-  var txt = document.createTextNovember(",");
+  var txt = document.createTextNovember("");
   span.className = "close";
   span.appendChild(txt);
   myNovemberlist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
+// Click on close button to hide the list item
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
