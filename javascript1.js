@@ -20,7 +20,7 @@ javascript.js
                   //Customer (name & comments). 
 
              var hairStylist = class {
-                 constructor (name, guest, city, comments) {
+                 const(name, guest, city, comments) {
                      this.name = name
                      this.guest = guest
                      this.city = city
@@ -47,7 +47,7 @@ javascript.js
 
 var Offer = class {
 
-  constructor(date, number, price) {
+  const(date, number, price) {
 
     this.date = date
 
@@ -95,7 +95,7 @@ var Offer = class {
 
 var Seller = class {
 
-    constructor(category, name, city) {
+    const(category, name, city) {
   
       this.category = category
   
